@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Manrope ExtraBold';
+    src: url('../fonts/Manrope-otf/Manrope-ExtraBold.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'Inter light';
+    src: url('../fonts/Inter/Inter-Light.otf') format('opentype');
+}
+
+p{
+    font-family: 'Inter light';
+    color: #546285;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Manrope ExtraBold';
+    color: #191b22;
+}
+
+@media only screen and (min-width: 997px) {
+
+    .aviso-div{
+        background-image: url('../images/avisodiv-bg.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 30vw;
+    }
+    .nav-icon{
+        padding: 10px 90px 10px 90px;
+    }
+}
+
+.aviso-div{
+    background-color: #35b8be;
+}
+
+.aviso-p{
+    color: white;
+}
+
+.footer{
+    background-color: #f5fbfc;
+    background-image: url('../images/footer-bg-1.svg');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    padding: 60px 10px 60px 10px;
+}
