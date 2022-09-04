@@ -42,7 +42,38 @@ h1, h2, h3, h4, h5, h6{
 .footer{
     background-color: #f5fbfc;
     background-image: url('../images/footer-bg-1.svg');
+    background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 40vh;
+    background-size: 60vh;
     padding: 60px 10px 60px 10px;
+}
+
+.a-socialFooter{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.a-copy{
+    color: #35b8be;
+}
+
+.a-copy:hover{
+    color: #35b8be;
+}
+
+.ul-footer{
+    list-style: none;
+}
+
+.a-liFooter{
+    color: #546285;
+    text-decoration: none;
+}
+.a-liFooter:hover{
+    color: #2b3141;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #2b3141;
 }
