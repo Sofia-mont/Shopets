@@ -6,13 +6,13 @@ def inicio(request):
     return render(request, "ShopetsApp/inicio.html")
 
 def servicios(request):
-    return HttpResponse("Servicios")
+    return render(request, "ShopetsApp/servicios.html")
 
 def tienda(request):
-    return HttpResponse("Tienda")
+    return render(request, "ShopetsApp/tienda.html")
 
 def blog(request):
-    return HttpResponse("Blog")
+    return render(request, "ShopetsApp/blog.html")
 
 def contacto(request):
-    return HttpResponse("Contacto")
+    return render(request, "ShopetsApp/contacto.html")
