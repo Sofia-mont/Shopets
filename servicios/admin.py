@@ -3,4 +3,7 @@ from .models import Servicio
 
 # Register your models here.
 
-admin.site.register(Servicio)
+class ServicioAdmin(admin.ModelAdmin):
+    readonly_fields=('created', 'updated')
+    
+admin.site.register(Servicio, ServicioAdmin)
