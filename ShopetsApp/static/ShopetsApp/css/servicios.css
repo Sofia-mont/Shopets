@@ -1,0 +1,14 @@
+.banner-servicios{
+    background-image: url(../images/bg-bannerServicios.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #f5fbfc; 
+    width: 100vw; 
+    height: 35vh;
+    margin-bottom: 150px;
+}
+
+.exp-info{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}

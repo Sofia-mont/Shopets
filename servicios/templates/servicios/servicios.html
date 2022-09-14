@@ -1,0 +1,51 @@
+{% extends "ShopetsApp/base.html" %}
+{% load static %}
+{% block ccsLinks %}<link rel="stylesheet" href="{% static 'ShopetsApp/css/servicios.css' %}">{% endblock %}
+{% block title %}Servicios | Shopets{% endblock %}
+
+{% block content %}
+    <div class="row align-items-center text-center banner-servicios">
+        <h1>Siempre queremos lo mejor para <br> <FONT COLOR="#35b8be">ti y tú mascota</FONT></h1>
+    </div>
+    <div class="card-group m-5 justify-content-center ">
+    {% for servicio in servicios %}
+    <div class="card align-self-center text-sm-center text-md-start" style="max-width: 540px;">
+        <div class="row g-0 m-2">
+          <div class="col-md-4">
+            <img src="{{servicio.imagen.url}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title mt-3" style="color: #35b8be;">{{servicio.titulo}}</h3>
+              <p class="card-text">{{servicio.contenido}}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    <div class="container text-center exp-info">
+      <div class="row">
+        <div class="col">
+          <h1>+5</h1>
+          <img src="{% static 'ShopetsApp/images/waveSeparator_Servicios.svg' %}" alt="">
+          <p class="mt-2">Años de servicio</p>
+        </div>
+        <div class="col">
+          <h1>10</h1>
+          <img src="{% static 'ShopetsApp/images/waveSeparator_Servicios.svg' %}" alt="">
+          <p class="mt-2">Veterinarios especializados</p>
+        </div>
+        <div class="col">
+          <h1>8</h1>
+          <img src="{% static 'ShopetsApp/images/waveSeparator_Servicios.svg' %}" alt="">
+          <p class="mt-2">Peluqueros caninos</p>
+        </div>
+        <div class="col">
+          <h1>+100</h1>
+          <img src="{% static 'ShopetsApp/images/waveSeparator_Servicios.svg' %}" alt="">
+          <p class="mt-2">Clientes satisfechos</p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
