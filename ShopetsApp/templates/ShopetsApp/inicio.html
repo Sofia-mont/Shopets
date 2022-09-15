@@ -1,8 +1,33 @@
 {% extends "ShopetsApp/base.html" %}
 {% load static %}
+{% block ccsLinks %}<link rel="stylesheet" href="{% static 'ShopetsApp/css/index.css' %}">{% endblock %}
 
 {% block title %}Inicio | Shopets{% endblock %}
 
 {% block content %}
+    <div class="container mx-auto index1">
+        <div class="row p-5 align-items-center">
+            <div class="col-md-12 col-lg-6">
+                <h2>En shopets tienes todo lo que necesitas para tu mascota, ven a nuestra tienda o recibelo en <FONT COLOR="#35b8be">casa.</FONT></h2>
+                <p class="mb-5">En nuestra tienda tienes todos los productos que necesitas para tu mascota, desde comida, collares personalizados hasta veterinarios experimentados para los chequeos de tu mascota y cuidados personales.</p>
+                <a class="btn-index" href="{% url 'Servicios' %}" role="button">Comprar aquí</a>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <img src="{% static 'ShopetsApp/images/IndexImg.png' %}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
 
+    <div class="container mx-auto index2">
+        <div class="row p-5 align-items-center">
+            <div class="col-md-12 col-lg-6">
+                <h2 style="color: #35b8be;">Deja a tu compañero con nuestros profesionales</h2>
+                <p class="mb-5">Con nuestros veterinarios y peluqueros caninos, puedes estar tranquilo de que todo saldrá bien. Pide nuestros servicios con seguridad.</p>
+                <a class="btn-index" href="{% url 'Servicios' %}" role="button">Nuestros servicios</a>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <img src="{% static 'ShopetsApp/images/Index2Img.png' %}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
 {% endblock %}
