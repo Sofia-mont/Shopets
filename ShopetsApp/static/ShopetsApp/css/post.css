@@ -1,0 +1,9 @@
+.banner-blog{
+    background-image: url(../images/bg-bannerServicios.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #f5fbfc;
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 150px;
+}

@@ -32,7 +32,7 @@
                     <li class="navbar-item px-3"><a class="nav-link  {% if request.path == '/' %} active {% endif %}" href="{% url 'Inicio' %}">Inicio</a></li>
                     <li class="navbar-item px-3"><a class="nav-link {% if '/tienda' in request.path %} active {% endif %}" href="{% url 'Tienda' %}">Tienda</a></li>
                     <li class="navbar-item px-3"><a class="nav-link {% if '/servicios' in request.path %} active {% endif %}" href="{% url 'Servicios' %}">Servicios</a></li>
-                    <li class="navbar-item px-3"><a class="nav-link {% if '/blog' in request.path %} active {% endif %}" href="{% url 'Blog' %}">Blog</a></li>
+                    <li class="navbar-item px-3"><a class="nav-link {% if '/blog' in request.path %} active {% endif %}" href="{% url 'blog' %}">Blog</a></li>
                     <li class="navbar-item px-3"><a class="nav-link {% if '/contacto' in request.path %} active {% endif %}" href="{% url 'Contacto' %}">Contacto</a></li>
                 </ul>
             </div>
