@@ -21,11 +21,12 @@
             <div class="card border-light h-100 post">
             <img src="{{post.imagen.url}}" class="card-img-top" alt="..." style="height: 30vh;">
             <div class="card-body">
+                <small class="text-muted">{% for cat in post.categorias.all %}{{cat.nombre}}{% if not forloop.last %} | {% endif %}{% endfor %}</small>
                 <h5 class="card-title" style="color: #2c9aa0;">{{post.titulo}}</h5>
                 <p class="card-text">{{post.contenido|slice:":150" }}...</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Última actualización: {{post.updated}}</small>
+                <small class="text-muted">Última actualización: {{post.updated|date:"M d, Y"}}</small>
             </div>
             </div>
             </a>

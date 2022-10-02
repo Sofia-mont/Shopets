@@ -4,10 +4,6 @@ from django.contrib.auth.models import User
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 
-STATUS = (
-    (0, "En desarrollo"),
-    (1, "Publicado")
-)
 # Create your models here.
 class Categoria(models.Model):
     nombre = models.CharField(max_length=150)
@@ -29,8 +25,7 @@ class Post(models.Model):
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     categorias = models.ManyToManyField(Categoria)
     created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now_add=True)
-    status=models.IntegerField(choices=STATUS, default= 0)
+    updated = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ('-updated',)

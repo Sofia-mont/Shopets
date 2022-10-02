@@ -1,13 +1,17 @@
 {% extends "ShopetsApp/base.html" %}
 {% load static %}
 {% block ccsLinks %}<link rel="stylesheet" href="{% static 'ShopetsApp/css/post.css' %}">{% endblock %}
-{% block title %}{{post.title}}{% endblock %}
+{% block title %}{{post.titulo}}{% endblock %}
 
 {% block content %}
-
 <div class="container">
-    <img src="{{post.imagen.url}}" class="img-fluid" alt="...">
-    <h2>{{post.title}}</h2>
-    <p>{{post.contenido</p>
+    <div class="row align-items-center m-4">
+        <div class="col-lg-6"><img src="{{post.imagen.url}}" class="img-fluid rounded" alt="Post image"></div>
+        <div class="col-lg-6"> 
+            <h2 style="color: #35b8be;">{{post.titulo}}</h2>
+            <p class="fst-italic">Fecha de publicación: {{post.created|date:"F d"}} del {{post.created|date:"Y"}}</p>
+        </div>
+    </div>
+    <p class="lh-lg">{{post.contenido}}</p>
 </div>
 {% endblock %}
