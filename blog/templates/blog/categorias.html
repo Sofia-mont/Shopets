@@ -9,12 +9,9 @@
 </div>
 
 <div class="container">
-    <div class="d-md-block mx-auto mb-4">
-        {% for post in posts %}
-            {% for categoria in post.categorias.all%}
-            <a href="{% url 'categoria' categoria.id %}"><button type="button" class="btn btn-light categorias">{{categoria.nombre}}</button></a>
-            {% endfor %}
-        {% endfor %}
+    <div class="d-md-block mx-auto mb-4 text-center">
+        <h3 style="color: #2c9aa0; user-select: none;" style="pointer-events: none;">{{categoria.nombre}}</h3>
+        <img src="{% static 'ShopetsApp/images/waveSeparator_Servicios.svg' %}" alt="" style="pointer-events: none;">
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for post in posts %}

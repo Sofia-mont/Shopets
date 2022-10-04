@@ -13,3 +13,8 @@ def blog(request):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
+
+def categoria(request, categoria_id):
+    categoria=Categoria.objects.get(id=categoria_id)
+    posts=Post.objects.filter(categorias=categoria)
+    return render(request, "blog/categorias.html", {'categoria':categoria, "posts":posts})
