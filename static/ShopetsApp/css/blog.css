@@ -1,0 +1,29 @@
+.banner-blog{
+    background-image: url(../images/bg-bannerServicios.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #f5fbfc; 
+    width: 100vw; 
+    height: 30vh;
+    margin-bottom: 150px;
+}
+
+.post:hover{
+    transition: all .3s ease-out;
+    -webkit-box-shadow: 0px 6px 11px -6px rgba(125,125,125,1);
+    -moz-box-shadow: 0px 6px 11px -6px rgba(125,125,125,1);
+    box-shadow: 0px 6px 11px -6px rgba(125,125,125,1);
+}
+
+.subtitle{
+    font-style: italic;
+    font-size: small;
+}
+
+.categorias{
+    color: #546285;
+}
+
+.linkPost{
+    text-decoration: none;
+}

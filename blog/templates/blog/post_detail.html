@@ -12,6 +12,6 @@
             <p class="fst-italic">Fecha de publicación: {{post.created|date:"F d"}} del {{post.created|date:"Y"}}</p>
         </div>
     </div>
-    <p class="lh-lg">{{post.contenido}}</p>
+    <p class="lh-lg">{{post.contenido|safe}}</p>
 </div>
 {% endblock %}
